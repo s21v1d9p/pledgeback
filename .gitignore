@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Environment and credentials — never commit these
+.env
+.env.*
+!.env.example
+.circle/
+
+# Foundry build cache and most of contracts/out — but keep the app artifact
+contracts/cache/
+contracts/out/build-info/
+# Ignore everything inside contracts/out except the specific artifact the app imports.
+# The artifact is committed so a fresh clone builds without Foundry installed.
+contracts/out/*
+!contracts/out/Pledgeback.sol/
+contracts/out/Pledgeback.sol/*
+!contracts/out/Pledgeback.sol/Pledgeback.json
+
+# Forge coverage and snapshots
+contracts/coverage/
+contracts/.gas-snapshot
+
+# OS / editor
+.DS_Store
+*.swp
+*.swo
+.idea/
+.vscode/settings.json
+
+# Bun
+.bun/

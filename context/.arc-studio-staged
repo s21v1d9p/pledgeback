@@ -1,0 +1,3 @@
+# Files staged by `arc-studio run --file`. Arc Studio removes only the paths listed here.
+review/APP-FINDINGS.md
+spec/SPEC.md
